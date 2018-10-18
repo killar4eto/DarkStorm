@@ -65,3 +65,6 @@ Open source project for DarkSteam community forum.
 ### VIP Panel
 - [ ] Buy Credits
 - [ ] Buy VIP
+
+### Very, very important
+- [ ] Live auto updater module!
