@@ -4,9 +4,9 @@ DarkStorm Web Engine
 Open source project for DarkSteam community forum.
 [Darksteam](https://darksteam.net)
 
-#Todo List
+# Todo List
 
-###General Pages
+### General Pages
 
 - [ ] News module
 - [ ] Registration module
@@ -20,7 +20,7 @@ Open source project for DarkSteam community forum.
 - [ ] Language module
 - [ ] Events Timer module
 
-###Rankings
+### Rankings
 - [ ] Players Ranking
 - [ ] Guilds Ranking
 - [ ] Killers Ranking
@@ -32,7 +32,7 @@ Open source project for DarkSteam community forum.
 - [ ] Online Players
 - [ ] Top Online Rankings
 
-###Account Panel
+### Account Panel
 - [ ] Account Logs 
 - [ ] Reset System 
 - [ ] Warehouse 
@@ -49,7 +49,7 @@ Open source project for DarkSteam community forum.
 - [ ] Lotto game
 - [ ] Change password
 
-###Admin Panel
+### Admin Panel
 - [ ] Auction Config
 - [ ] Market Config
 - [ ] Add/Edit/Delete news
@@ -62,6 +62,6 @@ Open source project for DarkSteam community forum.
 - [ ] Web depositor config
 - [ ] Logs module
 
-###VIP Panel
+### VIP Panel
 - [ ] Buy Credits
 - [ ] Buy VIP
