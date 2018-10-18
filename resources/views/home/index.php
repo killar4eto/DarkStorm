@@ -17,4 +17,8 @@
 </div>
 
     </div>
+
+    <div>
+        <?=$current_version;?>
+    </div>
 </div>
