@@ -3,11 +3,13 @@
 namespace App\Controllers;
 
 use App\Extend\Controller;
+use App\Api\Api;
 
 class Home extends Controller
 {
     public function index()
     {
+        $data['current_version'] = (new Api)->getVersion();
         $data['language'] = $this->language->load('home');
         $this->view->forge('home/index', $data);
     }

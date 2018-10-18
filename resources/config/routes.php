@@ -39,6 +39,9 @@ $routes['GET']['/hello/(.*)'] = function($name)
     echo 'Hello, ' . $name;
 };
 
+//API Route
+$routes['GET']['/Api/v0.1'] = "App\\Api\\Api@index";
+
 // POST
 $routes['POST']['/pictures'] = 'App\\Controllers\\Pictures@store';
 
