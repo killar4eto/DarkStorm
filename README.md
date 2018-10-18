@@ -8,7 +8,7 @@ Open source project for DarkSteam community forum.
 
 ###General Pages
 
-- [x] News module
+- [ ] News module
 - [ ] Registration module
 - [ ] Lost password module
 - [ ] Downloads module
