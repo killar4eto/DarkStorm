@@ -20,9 +20,7 @@ class Database extends \PDO
     public function __construct($database)
     {
         $db_config = Config::load('database');
-		$server = $db_config['server'];
-        $options = $db_config['options'];
-        $dsn = 'odbc:Driver={SQL Server};Server=' . $server . ';Database=' . $database . ';';
-        parent::__construct($dsn, null, null, $options);
+        $dsn = 'odbc:Driver={SQL Server};Server=' . $db_config['server'] . ';Database=' . $database . ';';
+        parent::__construct($dsn, $db_config['username'], $db_config['password'], $db_config['options']);
     }
 }
