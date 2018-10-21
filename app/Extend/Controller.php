@@ -8,7 +8,6 @@ use Core\Helpers\Language;
 class Controller extends MainController
 {
     protected $language = null;
-    protected $layout = 'layout';
 
     public function __construct()
     {
@@ -22,7 +21,7 @@ class Controller extends MainController
             $this->language->set($_SESSION['language']);
         }
 
-        $this->view->setData(array(
+        $this->view->addData(array(
             'title' => $this->language->load('titles'),
             'language_menu' => $this->language->load('menu')
         ));

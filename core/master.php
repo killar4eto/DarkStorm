@@ -16,6 +16,7 @@ use Core\Classes\Acher;
 $loader = new Autoloader();
 
 $loader->addNamespace('Core', ROOT . DS . 'core' . DS);
+$loader->addNamespace('League', ROOT . DS . 'core' . DS);
 $loader->addNamespace('App', ROOT . DS . 'app' . DS);
 
 $loader->register();

@@ -9,7 +9,7 @@
  */
 namespace Core\Classes;
 
-use Core\Helpers\Validation;
+use League\Plates\Engine as Plates;
 
 /**
  * Controller class.
@@ -19,13 +19,23 @@ use Core\Helpers\Validation;
 class Controller 
 {
     protected $input = null;
+    protected static $plates = null;
     protected $view = null;
     protected $layout = null;
 
     public function __construct()
     {
         $this->input = Input::getInstance();
-        $this->view = new View();
-        $this->view->setLayout($this->layout);
+        $this->view = self::$plates;
+    }
+
+    public static function setPlates($folder)
+    {
+        self::$plates = new Plates($folder);
+    }
+
+    public static function getPlates()
+    {
+        return self::$plates;
     }
 }

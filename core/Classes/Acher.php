@@ -10,8 +10,6 @@
 namespace Core\Classes;
 
 use Core\Helpers\Language;
-use Twig_Environment;
-use Twig_Loader_Filesystem;
 
 /**
  * Acher class.
@@ -49,7 +47,8 @@ class Acher
     {
         Config::setFolder(ROOT . DS . 'resources' . DS . 'config' . DS);
         Language::setFolder(ROOT . DS . 'resources' . DS . 'lang' . DS);
-        View::setFolder(ROOT . DS . 'resources' . DS . 'views' . DS);
+        // View::setFolder(ROOT . DS . 'resources' . DS . 'views' . DS);
+        Controller::setPlates(ROOT . DS . 'resources' . DS . 'views' . DS);
     }
 
     public function setConfiguration()

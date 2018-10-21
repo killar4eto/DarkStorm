@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Extend\Controller as Controller;
-use App\Models\Picture;
+use App\Models\Character;
 
 class Pictures extends Controller
 {
@@ -12,7 +12,7 @@ class Pictures extends Controller
     public function __construct()
     {
         parent::__construct();
-        $this->picture = new Picture();
+        $this->picture = new Character();
     }
 
     public function index()

@@ -23,6 +23,7 @@ class Input
         $this->set('POST', $_POST);
         $this->set('GET', $_GET);
         $this->set('COOKIE', $_COOKIE);
+        $this->set('FILES', $_FILES);
     }
     
     public static function getInstance()
