@@ -10,6 +10,9 @@
 namespace Core\Classes;
 
 use Core\Helpers\Language;
+use Twig_Environment;
+use Twig_Loader_Filesystem;
+
 /**
  * Acher class.
  *
