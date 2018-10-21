@@ -15,16 +15,12 @@ use Core\Classes\Config;
  *
  * @author Atanas Harapov <atanas.harapov@abv.bg>
  */
-class Database extends \PDO 
+class Database extends \PDO
 {
-    public function __construct()
+    public function __construct($database)
     {
         $db_config = Config::load('database');
-		$username = $db_config['username'];
-		$password = $db_config['password'];
-		$dsn = $db_config['dsn'];
-        $options = $db_config['options'];
-        
-        parent::__construct($dsn, $username, $password, $options);
+        $dsn = 'odbc:Driver={SQL Server};Server=' . $db_config['server'] . ';Database=' . $database . ';';
+        parent::__construct($dsn, $db_config['username'], $db_config['password'], $db_config['options']);
     }
 }

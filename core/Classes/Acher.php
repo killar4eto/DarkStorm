@@ -10,6 +10,7 @@
 namespace Core\Classes;
 
 use Core\Helpers\Language;
+
 /**
  * Acher class.
  *
@@ -46,7 +47,8 @@ class Acher
     {
         Config::setFolder(ROOT . DS . 'resources' . DS . 'config' . DS);
         Language::setFolder(ROOT . DS . 'resources' . DS . 'lang' . DS);
-        View::setFolder(ROOT . DS . 'resources' . DS . 'views' . DS);
+        // View::setFolder(ROOT . DS . 'resources' . DS . 'views' . DS);
+        Controller::setPlates(ROOT . DS . 'resources' . DS . 'views' . DS);
     }
 
     public function setConfiguration()

@@ -1,9 +1,9 @@
 <?php
 
 return array(
-    'dsn' => 'sqlsrv:Server=127.0.0.1;Database=MuOnline',
-    'username' => 'sa',
-    'password' => 'kalo',
+    'server' => 'DESKTOP-TFT19OE\SQLEXPRESS',
+    'username' => null,
+    'password' => null,
     'options' => array(
             \PDO::ATTR_ERRMODE            => \PDO::ERRMODE_WARNING ,
             \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
